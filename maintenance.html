@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<script type="text/javascript">
+    document.ondragstart = noselect;
+// запрет на выделение элементов страницы
+    document.oncontextmenu = noselect;
+// запрет на выведение контекстного меню
+function noselect() {return false;}
+</script>
+
+<style type="text/css">
+/* Отключение возможности выделения в теге DIV */
+.noselect {
+-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+</style>
+
+<html lang="ru-RU">
+  <head>
+    <title>Сайт Закрыт на Техническое Обслуживание</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F180x180.png?v=1597163603685"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F32x32.png?v=1597163603599"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F16x16.png?v=1597163603444"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мои конспекты</title>
+    <meta name="description" content="Мои конспекты" />
+    <!DOCTYPE html>
+    <html lang="ru">
+      <head>
+        <!-- Подключения style -->
+        <style>
+                          
+           * {
+            box-sizing: border-box;
+          }
+        
+          body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+          }
+          
+          .header {
+            padding: 15px 16px;
+            background: #555;
+            color: #f1f1f1;
+            text-align: center;
+            
+          }
+          
+          /* Стиль верхней панели навигации */
+          .topnav {
+            overflow: hidden;
+            background-color: #333;
+          }
+
+          /* Стиль верхних навигационных ссылок */
+          .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+          }
+
+         
+          
+          /* Очистить поплавки после колонн */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+
+                                    
+          /* Левая колонка */
+          .leftcolumn {
+            float: left;
+            width: 33%;
+            padding-left: 24px;
+          }
+
+          /* Правая колонка */
+
+          .rightcolumn {
+            float: left;
+            width: 33%;
+            padding-left: 24px;
+          }
+
+          /* Колонка по середине */
+          .middlecolumn {
+            float: left;
+            padding-left: 24px;
+          }
+
+
+          /* Изображения */
+          .img {
+            a img {
+              border: none;
+            }
+          }
+          
+          
+           @media screen and (max-width: 800px) {
+            .mob {   
+                width: 100%;
+                padding: 0;
+                font-size: 20px;
+              
+            }
+            
+        @media screen and (max-width: 800px) {
+            .main {   
+                width: 100%;
+                padding: 0;
+                font-size: 18px;
+              
+            }
+        }
+
+        /* Отзывчивый макет - когда экран меньше, чем 400px широкий, сделать навигационные ссылки стек поверх друг друга, а не рядом друг с другом */
+        @media screen and (max-width: 700px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }</style>
+        <title>Мои конспекты</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+      </head>
+      <body>
+        <a name="top"></a> <!-- Якорь на вверх -->
+        <!-- Якорь вверх -->
+        <div class="header">
+          <h1>Мои конспекты</h1>
+        </div>
+
+        <!-- Панель с верху -->
+
+        <div class="topnav"> 
+          <a style="float:centre">⠀</a>
+        </div>
+
+        <div class="row">
+         
+
+         <!-- Заглушка -->
+              <div class="main">
+               <html>
+        <head>
+            <title>Сайт Закрыт на Техническое Обслуживание</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <style>
+            h1 { font-size: 50px; }
+            body { text-align:center; font: 20px Helvetica, sans-serif; color: #333; }
+            </style>
+        </head>
+        <body>
+            <h1 class="mob">Сайт Закрыт на Техническое Обслуживание</h1>
+      <p>Приносим извинения за неудобство, но в данный момент сайт находится на техническом обслуживание.</p>
+      <p>Скоро мы вернемся online!</p>
+        </body>
+      </html> 
+          </div>
+                
+          <style>
+            .mo {
+            font-size: 26px;
+            }
+          </style>
+
+<body>
+<div class="mo">
+  
+<p id="demo"></p>
+</div>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 1, 2020 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML =days + ":"+ hours + ":"
+    + minutes + ":" + seconds ;
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x); 
+        document.getElementById("demo").innerHTML = "";
+        /*document.getElementById("small").remove();*/
+        document.getElementById("timess").remove(); 
+    }
+}, 1000);
+</script>
+          
+          <style>
+          .loadersmall {
+    webkit-animation: spin 1s linear infinite;
+    border: 5px solid #f1f1f1;
+    border-top: 5px solid #555;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+            
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+          </style>
+          <div align="center" style="overflow: hidden;">
+            <div class="loadersmall" id="small"></div>
+          </div>
+          
+          
+            
+            
+
+        <a name="bottom"></a>
+          </body>
+  </div>
+      </body>
+    </html>
+  </head>
+</html>

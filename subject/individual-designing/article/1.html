@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>Мои конспекты</title>
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F180x180.png?v=1597163603685"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F32x32.png?v=1597163603599"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F16x16.png?v=1597163603444"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мои конспекты</title>
+    <meta name="description" content="Мои конспекты" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+  cursor: default;
+}
+ 
+  span {
+    cursor: pointer;
+  }
+
+@font-face {
+font-family: 'Segoe Print Regular';
+src: url('SegoePrint.eot');
+src: url('SegoePrint.eot?#iefix') format('embedded-opentype'),
+url('SegoePrint.woff') format('woff'),
+url('SegoePrint.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+  
+  
+body {
+    font-family: Segoe Print Regular;
+    
+    background: #ffffff;
+}
+
+
+  
+/* Заголовок / Название Блога */
+.header {
+    text-align: center;
+    background: #ffffff;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+
+
+/* Фикс границ для pre */  
+pre {
+    white-space: pre-wrap;
+    background: rgba(245, 245, 245, 1);
+    font-size: 20px;
+  }
+@media screen and (max-width: 800px) {
+    pre {
+      font-size: 15px;
+    }
+}
+  
+  
+
+
+  
+/* Поддельные изображения */
+          .fakeimg {
+            background-color: #aaa;
+            max-width: 900px;
+            float: none;
+            padding: 20px;
+            margin: 0 auto;
+          }
+  
+      /* Мобильная версия */
+  @media screen and (max-width: 400px) {
+    .fakeimg {
+            background-color: #aaa;
+            max-width: 100%;
+            float: center;
+            padding: 20px;
+    }
+  }
+  
+
+  
+div.page-container {
+  min-width: 960px;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  }  
+  
+/* Очистить поплавки после колонн */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+</style>
+    
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  
+  
+}
+
+  @media screen and (max-width: 870px) {
+    body {
+      font-size: 20px;
+    }
+  }
+  
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.header h2 {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
+.w3-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
+    }  
+  
+.content {
+  padding: 40px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+  font-size: 0.8em;
+}
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    
+}
+  /* Центрирование текста, если нужно
+p {text-align: center;}
+  img {margin: auto;display: block;}
+  */
+  
+  img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    
+    
+    
+}
+       @media screen and (max-width: 700px) {
+        img {
+        max-width: 100%;
+        max-height: 50%;   
+}
+  
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2><span class="w3-button w3-display-topright" style="font-size:20px !important" onclick="history.back();">×</span>  scw.glitch.me</h2>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
+<div class="content">
+  <h3>Аналитический этап 20.10.20</h3>
+  <p><b>Цель проекта</b> - что мы хотим получить в результате проекта.</p>
+
+<p>Целью проекта является создание проектного продукта, наличие которого легко проверить.</p>
+
+<p><b>Перечень возможных продуктов:</b><br>
+1. Анализ данных различных исследований<br>
+2. Система мониторинга<br>
+3. Система управления<br>
+4. Бизнес план<br>
+5. Пакет метадических рекомендаций<br>
+6. Справочник<br>
+7. Прогноз<br>
+8. Статья<br>
+9. Публикация<br>
+10. Учебное пособие<br>
+11. Чертёж</p>
+
+<p><b>Выражение используемые при формулировки цели:</b><br>
+1. Разработка.<br>
+2. Оформление<br>
+3. Изготовление<br>
+4. Конструирование<br>
+5. Определение<br>
+6. Выявление<br>
+7. Установление<br>
+8. Обоснование</p>
+
+<p><b>Задача проекта</b> (что нужно сделать, чтобы достичь цели?);<br>
+Гипотеза (что будет если);</p>
+
+<p><b>Раздел 2 разработка проекта</b><br>
+<b>Поясните основные требования к выбору темы:</b><br>
+Актуальность -<br>
+Оригинальность -<br>
+Конкретность -<br>
+Выполнимость -</p>
+
+<p><b>23.10.20</b><br>
+<b>Разработка проекта</b><br>
+<h3>Тема: реализация проекта</h3></p>
+
+<p>Качество исследования зависит от качества исходной информации.</p>
+
+<p><b>Реализация проекта</b> - это действия и мероприятия, направленные на достижение поставленных целей и задач, то есть - организация исследовательской деятельности.</p>
+
+<p><b>Выбор источников информации</b><br>
+<b>Источники информации:</b><br>
+Первичные - отчёты, диссертации, правительственные публикации, рукописи</p>
+
+<p>Вторичные - газеты, журналы, книги и интернет</p>
+
+<p>Третичные - рефераты, словари, энциклопедии, библиографии.</p>
+
+<p>Библиографии - это перечень книг по какому-либо вопросу или какого-либо авторы.</p>
+
+<p>Первичная информация - документы и издания, в которых отражены новые научные сведения или новое</p>
+
+<p>Вторичные и третичные - данные, собранные, ранее для целей, отличных от связанных с решение исследовательской работы</p>
+
+<p><b>Сбор информации</b><br>
+<b>Методы сбора и анализа информации:</b><br>
+Эмпирические - проведение собственных наблюдений и экспериментов.</p>
+
+<p>Теоретические - совершаются в уме, когда объект исследования становится в различные мысленные условия и анализируется его возможное поведение.</p>
+
+<p>Теоретические исследования:<br>
+Конспектирования - выделение главных идей и положений работы</p>
+
+<p>Аннотирование - краткая запись общего содержания книги или статья</p>
+
+<p>Реферирование - сжатое изложение основного содержания одной или нескольких работ</p>
+
+<p><b>Методы сбора информации:</b><br>
+Цитирование - дословная запись выражений, фактических или цифровых данных, содержащихся в литературном источнике.</p>
+
+<p>Составление биографии - перечня источников, отобранных для работы в связи с исследуемой проблемой.</p>
+
+<p><b>Эмпирическое исследование</b><br>
+<b>Методы сбора информации:</b><br>
+Наблюдение - характеризуется прямой регистрацией фактов в момент совершения конкретных действий.</p>
+
+<p>Эксперимент - процедура проверки гипотез, когда конечный результат неизвестен.</p>
+
+<p>Тестирование - метод измерения и оценки различных качеств и состояния объекта.</p>
+
+<p>Опрос - получение ответов на задаваемые вопросы.</p>
+
+<p>Моделирование - изучение объекта</p>
+
+<p><b>Создание проектного продукта</b></p>
+
+<p>Материальные - модели, макеты, подделки, плакаты, картины, скульптуры, другие творческие.</p>
+
+<p>Действенные - мероприятия, викторины, соревнования, тематические вечера.</p>
+
+<p>Письменные - статьи, брошюры, литературные произведения.</p>
+
+<p>Творческие - завершаются созданием произведений искусства различных видов.</p>
+
+<p>Практико-ориентированнве - воплощаются в материальных продуктах, реже - в мероприятиях и письменных инструкциях, рекомендациях и пр.</p>
+
+<p>Иследовательские - завершаются созданием научных статей и брошюр, моделей (макетов) и учебных презентаций, реже - мероприятиями</p>
+
+<p>Информационные - завершаются созданием брошюр, таблиц, схем, графиков, диаграмм.</p>
+</div>
+
+  <div align="center"><button class="cancelbtn" onclick="history.back();" type="button">Вернуться</button></div>
+  
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+</body>
+</html> 
+
+
+
+
+    
+</head>
+
+</html>

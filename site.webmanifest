@@ -1,0 +1,45 @@
+{
+    "name": "Мои конспекты",
+    "short_name": "Мои конспекты",
+    "icons": [
+    {
+            "src": "https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F128x128.png?v=1597165544332",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+         {
+            "src": "https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F192x192.png?v=1597163603407",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F256x256.png?v=1597163603129",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F512x512.png?v=1597168612521",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F1024x1024.png?v=1597168697270",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F2048x2048.png?v=1597168976070",
+            "sizes": "2048x2048",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F4096x4096.png?v=1597169116007",
+            "sizes": "4096x4096",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "white",
+    "display": "standalone",
+    "msapplication-starturl": "scw.glitch.me"
+}

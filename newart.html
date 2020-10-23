@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>Мои конспекты</title>
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F180x180.png?v=1597163603685"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F32x32.png?v=1597163603599"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F16x16.png?v=1597163603444"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мои конспекты</title>
+    <meta name="description" content="Мои конспекты" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+  cursor: default;
+}
+ 
+  span {
+    cursor: pointer;
+  }
+
+@font-face {
+font-family: 'Segoe Print Regular';
+src: url('SegoePrint.eot');
+src: url('SegoePrint.eot?#iefix') format('embedded-opentype'),
+url('SegoePrint.woff') format('woff'),
+url('SegoePrint.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+  
+  
+body {
+    font-family: Segoe Print Regular;
+    
+    background: #ffffff;
+}
+
+
+  
+/* Заголовок / Название Блога */
+.header {
+    text-align: center;
+    background: #ffffff;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+
+
+/* Фикс границ для pre */  
+pre {
+    white-space: pre-wrap;
+    background: rgba(245, 245, 245, 1);
+    font-size: 20px;
+  }
+@media screen and (max-width: 800px) {
+    pre {
+      font-size: 15px;
+    }
+}
+  
+  
+
+
+  
+/* Поддельные изображения */
+          .fakeimg {
+            background-color: #aaa;
+            max-width: 900px;
+            float: none;
+            padding: 20px;
+            margin: 0 auto;
+          }
+  
+      /* Мобильная версия */
+  @media screen and (max-width: 400px) {
+    .fakeimg {
+            background-color: #aaa;
+            max-width: 100%;
+            float: center;
+            padding: 20px;
+    }
+  }
+  
+
+  
+div.page-container {
+  min-width: 960px;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  }  
+  
+/* Очистить поплавки после колонн */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+</style>
+    
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  
+  
+}
+
+  @media screen and (max-width: 870px) {
+    body {
+      font-size: 20px;
+    }
+  }
+  
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.header h2 {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
+.w3-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
+    }  
+  
+.content {
+  padding: 40px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+  font-size: 0.8em;
+}
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    
+}
+  /* Центрирование текста, если нужно
+p {text-align: center;}
+  img {margin: auto;display: block;}
+  */
+  
+  img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    
+    
+    
+}
+       @media screen and (max-width: 700px) {
+        img {
+        max-width: 100%;
+        max-height: 50%;   
+}
+  
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2><span class="w3-button w3-display-topright" style="font-size:20px !important" onclick="history.back();">×</span>  scw.glitch.me</h2>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
+<div class="content">
+  <h3>Scroll Down to See The Effect</h3>
+  <p>We have created a "progress bar" to <b>show how far a page has been scrolled</b>.</p>
+  <p>It also <b>works when you scroll back up</b>.</p>
+  <p>It is even <b>responsive</b>! Resize the browser window to see the effect.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+  <div align="center"><button class="cancelbtn" onclick="history.back();" type="button">Вернуться</button></div>
+  
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+</body>
+</html> 
+
+
+
+
+    
+</head>
+
+</html>
