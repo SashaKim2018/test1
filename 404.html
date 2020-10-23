@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!--
+<script type="text/javascript">
+    document.ondragstart = noselect;
+// запрет на выделение элементов страницы
+    document.oncontextmenu = noselect;
+// запрет на выведение контекстного меню
+function noselect() {return false;}
+</script>
+
+<style type="text/css">
+/* Отключение возможности выделения в теге DIV */
+.noselect {
+-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+</style>
+-->
+<html lang="ru-RU">
+  <head>
+    <title>Ошибка 404</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F180x180.png?v=1597163603685"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F32x32.png?v=1597163603599"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F16x16.png?v=1597163603444"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мои конспекты</title>
+    <meta name="description" content="Мои конспекты" />
+    <!DOCTYPE html>
+    <html lang="ru">
+      <head>
+        <!-- Подключения style -->
+        <style>
+                          
+           * {
+            box-sizing: border-box;
+          }
+        
+          body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+          }
+          
+          .header {
+            padding: 15px 16px;
+            background: #555;
+            color: #f1f1f1;
+            text-align: center;
+            
+          }
+          
+          /* Стиль верхней панели навигации */
+          .topnav {
+            overflow: hidden;
+            background-color: #333;
+          }
+
+          /* Стиль верхних навигационных ссылок */
+          .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+          }
+
+         
+          
+          /* Очистить поплавки после колонн */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+
+                                    
+          /* Левая колонка */
+          .leftcolumn {
+            float: left;
+            width: 33%;
+            padding-left: 24px;
+          }
+
+          /* Правая колонка */
+
+          .rightcolumn {
+            float: left;
+            width: 33%;
+            padding-left: 24px;
+          }
+
+          /* Колонка по середине */
+          .middlecolumn {
+            float: left;
+            padding-left: 24px;
+          }
+
+
+          /* Изображения */
+          .img {
+            a img {
+              border: none;
+            }
+          }
+          
+          
+           @media screen and (max-width: 800px) {
+            .mob {   
+                width: 100%;
+                padding: 0;
+                font-size: 20px;
+              
+            }
+            
+        @media screen and (max-width: 800px) {
+            .main {   
+                width: 100%;
+                padding: 0;
+                font-size: 18px;
+              
+            }
+        }
+
+        /* Отзывчивый макет - когда экран меньше, чем 400px широкий, сделать навигационные ссылки стек поверх друг друга, а не рядом друг с другом */
+        @media screen and (max-width: 700px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }</style>
+
+        <style>
+          * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 520px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.notfound .notfound-404 {
+  position: relative;
+  height: 240px;
+}
+
+.notfound .notfound-404 h1 {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 252px;
+  font-weight: 900;
+  margin: 0px;
+  color: #262626;
+  text-transform: uppercase;
+  letter-spacing: -40px;
+  margin-left: -20px;
+}
+
+.notfound .notfound-404 h1>span {
+  text-shadow: -8px 0px 0px #f1f1f1;
+}
+
+.notfound .notfound-404 h3 {
+  font-family: 'Cabin', sans-serif;
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #262626;
+  margin: 0px;
+  letter-spacing: 3px;
+  padding-left: 6px;
+}
+
+.notfound h2 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .notfound .notfound-404 {
+    height: 200px;
+  }
+  .notfound .notfound-404 h1 {
+    font-size: 200px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 {
+    height: 162px;
+  }
+  .notfound .notfound-404 h1 {
+    font-size: 162px;
+    height: 150px;
+    line-height: 162px;
+  }
+  .notfound h2 {
+    font-size: 16px;
+  }
+}
+        </style>
+
+
+        <title>Мои конспекты</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+      </head>
+      <body>
+        <a name="top"></a> <!-- Якорь на вверх -->
+        <!-- Якорь вверх -->
+        <div class="header">
+          <h1>Мои конспекты</h1>
+        </div>
+
+        <!-- Панель с верху -->
+
+        <div class="topnav"> 
+          <a style="float:centre">⠀</a>
+        </div>
+
+        <div class="row">
+         
+
+         <!-- Заглушка -->
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+
+  <!-- Custom stlylesheet -->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+<body>
+
+  <div id="notfound">
+    <div class="notfound">
+      <div class="notfound-404">
+        <h3>Страница не найдена</h3>
+        <h1><span>4</span><span>0</span><span>4</span></h1>
+      </div>
+      <h2>Нам очень жаль, но запрошенная<br>Вами страница не найдена.</h2>
+      <div class="but" align="center">
+  <form action="https://scw.glitch.me"><button class="cancelbtn" onclick="history.back();" type="button">Вернуться</button></form>
+</div>
+    </div>
+  </div>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+   
+
+
+  
+
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<title></title>
+<style>
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+button:hover, a:hover {
+  opacity: 0.7;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+  
+
+
+
+</style>
+</head>
+
+</html>
+
+        </div>
+      </body>
+    </html>
+  </head>
+</html>

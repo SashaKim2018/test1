@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square16x16logo src="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F16x16.png?v=1597163603444"/>
+            <square32x32logo src="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F32x32.png?v=1597163603599"/>
+            <square128x128logo src="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F128x128.png?v=1597165544332"/>
+            <square150x150logo src="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2Fmstile-150x150.png?v=1596743616793"/>
+            <TileColor>#da532c</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
