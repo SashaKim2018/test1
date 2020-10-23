@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!--
+<script type="text/javascript">
+    document.ondragstart = noselect;
+// запрет на выделение элементов страницы
+    document.oncontextmenu = noselect;
+// запрет на выведение контекстного меню
+function noselect() {return false;}
+</script>
+-->
+<style type="text/css">
+/* Отключение возможности выделения в теге DIV */
+.noselect {
+-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+  
+
+</style>
+
+<html lang="ru-RU">
+  <head>
+    <title>Мои конспекты</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F180x180.png?v=1597163603685"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F32x32.png?v=1597163603599"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F16x16.png?v=1597163603444"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="htaccess" href=".htaccess" />
+    <link rel="httpd" href="httpd.conf" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="Конспекты КСК">
+    <meta name="description" content="На сайте размещены мои записанные конспекты на время обучения в техникуме">
+    <meta name="author" content="Кирилл Афонин">
+    <meta name="copyright" content="Все права принадлежат Кириллу Афонину">
+    <!-- Заглушка -->
+    <!-- <meta http-equiv="refresh" content="0;URL=https://scw.glitch.me/maintenance.html"> -->
+    <!-- Заглушка -->
+    <!DOCTYPE html>
+    <html lang="ru">
+      
+      
+      
+      
+      <head>
+        <!-- Подключения style -->
+        <style>
+        
+           * {
+            box-sizing: border-box;
+          }
+        
+          body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+          }
+          
+          .header {
+            padding: 20px 16px;
+            background: #555;
+            color: #f1f1f1;
+            text-align: center;
+            
+          }
+          
+          /* Стиль верхней панели навигации */
+          .topnav {
+            overflow: hidden;
+            background-color: #333;
+          }
+
+         @media screen and (max-width: 800px) {
+                .leftcolumn {
+                  padding-bottom: 44px;
+                }
+          }
+.row {
+              padding-bottom: 45px;
+            }
+
+          /* Изменение цвета при наведении */
+          .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          /* Очистить поплавки после колонн */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+
+          /* Стиль верхней панели навигации */
+          .topnav {
+            overflow: hidden;
+            background-color: #333;
+          }
+
+          /* Стиль верхних навигационных ссылок */
+          .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+
+          /* Изменение цвета при наведении */
+          .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          /* Поддельные изображения */
+          .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+          }
+
+          /* Изображения */
+          .img {
+            a img {
+              border: none;
+              
+            }
+          }
+          
+
+
+          .container {
+            position: relative;
+            max-width: 600px; /* Максимальный размер фотографии */
+          }
+
+          .container .content {
+            position: absolute; /* Position the background text */
+            bottom: 4px; /* At the bottom. Use top:0 to append it to the top */
+            border-radius: 5px;
+            background: rgba(
+              0,
+              0,
+              0,
+              0.5
+            ); /* Black background with 0.5 opacity */
+            color: #f1f1f1; /* Grey text */
+            width: 100%; /* Full width */
+            padding: 13px -1px; /* Высота затемнения */
+            font-family: calibri;
+            
+          }
+          
+          .left,
+          .midle,
+          .right {
+            padding-right: 10px;
+          }
+          
+          /* Плавающая кнопка  */
+            
+              .footer {
+                  position: fixed;
+                  left: 0;
+                  bottom: 0;
+                  width: 100%;
+                  padding: 20px;
+                  background: #ddd;
+                  padding: 1px;
+                  text-align: center;
+                  overflow: hidden;
+                  display: block
+              }
+              .footer:hover {
+                  background: #555;
+                  color: #555;
+                  overflow: hidden;
+                  display: block
+
+                }
+          
+              .topn a {
+
+                  overflow: hidden;
+                  display: block;
+                  text-align: center;
+                  background: #f2f2f2;
+                  color: #555;
+                  text-align: center;
+                  text-decoration: none;
+          }
+            
+        
+          }
+          
+          
+          p {
+            text-align:center;
+          }
+        </style>
+        <title>Мои конспекты</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+      </head>
+      <body>
+        <a name="top"></a> <!-- Якорь на вверх -->
+        <!-- Якорь вверх -->
+        <div class="header">
+          <h1>Мои конспекты</h1>
+        </div>
+        
+        
+
+        <!-- Панель с верху -->
+
+        <div class="topnav" style="">
+          <a href="https://scw.glitch.me">Вернуться</a>
+          <a href="https://xn--c1arqe.xn--p1ai/content/schedule/1k/n.pdf">Расписание</a>          
+          <a href="#bottom" style="float:right">Спуститься вниз</a>
+          <a href="article/Auth" style="float:right">Админ панель</a>
+          
+
+   
+          
+        </div>
+        
+        
+
+
+        
+        
+        
+  <div class="row">
+  <div class="leftcolumn">
+    
+    <div class="cards">
+      <h2>Здесь скоро что-то будет</h2>
+      <h5>Здесь скоро что-то будет</h5>
+      <div class="butf">
+        
+      <div class="container nocopyimg">
+                    <img
+                      src="https://cdn.glitch.com/7b48eb50-5cdc-4bb9-bd92-2184fd028285%2Fmaxresdefault.jpg?v=1599486499190"
+                      alt="Notebook"
+                      style="width:100%; border-radius: 5px;"
+                    />
+                    <!--<div class="content">
+                       <h1><center>Начать читать</center></h1>
+                    </div> -->
+                  </div> 
+                
+        </div>
+    </div>
+    
+    <div class="cards">
+      <h2>Половое размножение</h2>
+      <h5>22 октября 2020</h5>
+      <div class="butf">
+        <a href="article/1">
+      <div class="container nocopyimg">
+                    <img
+                      src="https://sun9-72.userapi.com/r83UgTL15XfYNxwu1sgzvEWkdrFy9ucT9WqhKQ/TU9e-Aj91ao.jpg"
+                      alt="Notebook"
+                      style="width:100%; border-radius: 5px;"
+                    />
+                    <div class="content">
+                      <h1><center>Начать читать</center></h1>
+                    </div>
+                  </div>
+                </a>
+        </div>
+    </div>
+    
+    
+    
+    
+  </div>
+    
+    
+    
+
+    
+    
+</div>
+        
+        
+        <style>
+        body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 100%;
+}
+
+          @media screen and (min-width: 870px) {
+          img {
+            height: 270px;
+          }
+          }
+          
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+          @media screen and (min-width: 870px) {
+          .cards {
+       float: left;
+    width: 33%;
+            background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+                border-style: solid;
+    border-color: #f1f1f1;
+    border-width: 10px;
+            
+          }
+          }
+          
+           .content {font-size: 70%;
+            }
+          
+          
+          
+        
+          
+          .cards {
+            border-bottom: 0px;
+            border-top: 0px;
+            background-color: white;
+            border-radius: 5px;
+          }
+          .card {
+            border-radius: 5px;
+            border-top: 0px;
+          }
+          
+          
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 870px) {
+            .card {   
+                width: 100%;
+                content: "";
+                display: table;
+                clear: both;
+                padding: 20px;
+            }
+  .leftcolumn {
+            float:none;
+        }
+  .container {
+    max-width:none;
+  }
+  
+          }
+  
+  h2 {
+    font-size:120%
+  }
+  
+  @media screen and (max-width: 870px) {
+  .butf {
+    padding: 20px;
+    padding-top: 0;
+  }
+    h2 {
+            padding-top: 10px;
+          }
+  }
+    
+          @media screen and (max-width: 870px) {
+            .nocopyimg {
+    width: 100%;
+  }
+          }
+          
+          @media screen and (max-width: 870px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+          h2,h5 {
+            text-align:center;
+          }
+          
+          @media screen and (min-width: 1000px) {
+            .rightcolumn {
+          width: 24%;
+    padding-left: 20px;
+    padding-top:10px;          
+    right: 28px;
+}
+          }
+          @media screen and (min-width: 1820px) {
+          .cards {width: 660px;}
+          }
+          
+          
+          
+          
+          
+          
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+        </style>
+     
+            <!-- Конец 3 колонки -->
+            
+            <div class="footer topn">
+              <a href="#top"><p>Вверх</p></a>
+            </div>
+            
+         
+        <a name="bottom"></a>
+        
+      </body>
+    </html>
+  </head>
+</html>

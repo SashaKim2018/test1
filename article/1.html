@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>ClassWork</title>
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F180x180.png?v=1597163603685"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F32x32.png?v=1597163603599"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F16x16.png?v=1597163603444"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мои конспекты</title>
+    <meta name="description" content="Мои конспекты" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+
+/* Заголовок / Название Блога */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #555;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Стиль верхней панели навигации */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Стиль верхних навигационных ссылок */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Фикс границ для pre */  
+pre {
+    white-space: pre-wrap;
+    background: rgba(245, 245, 245, 1);
+    font-size: 20px;
+  }
+@media screen and (max-width: 800px) {
+    pre {
+      font-size: 15px;
+    }
+}
+  
+  
+
+/* Изменение цвета при наведении */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+/* Поддельные изображения */
+          .fakeimg {
+            background-color: #aaa;
+            max-width: 900px;
+            float: none;
+            padding: 20px;
+            margin: 0 auto;
+          }
+  
+      /* Мобильная версия */
+  @media screen and (max-width: 400px) {
+    .fakeimg {
+            background-color: #aaa;
+            max-width: 100%;
+            float: center;
+            padding: 20px;
+    }
+  }
+  
+/* Style the header */
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}  
+  
+div.page-container {
+  min-width: 960px;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  }  
+  
+/* Очистить поплавки после колонн */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+  
+  
+  
+  /* Стиль кнопоки до нажатия для печатной версии */
+  
+p#first {
+
+cursor: pointer;
+
+font-family: cursive;
+
+text-indent: 22px;
+
+line-height: 33px;
+
+border: 1px solid #d2d2d2;
+
+font-size: 18px;
+  
+  
+}
+
+  /* Стиль кнопоки после нажатия для печатной версии */
+  
+p#first_yelloy {
+
+cursor: pointer;
+
+background: #ff9900;
+
+font-size: 18px;
+
+color: white;
+
+text-indent: 22px;
+
+line-height: 33px;
+
+border: 1PX SOLID #ff9900;
+  
+
+}
+
+/* Отзывчивый макет  -когда экран меньше, чем 800px широкий, сделать два столбца стека друг на друга, а не рядом друг с другом */
+@media screen and (max-width: 800px) {
+    .middlecolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Отзывчивый макет - когда экран меньше, чем 400px широкий, сделать навигационные ссылки стек поверх друг друга, а не рядом друг с другом */
+@media screen and (max-width: 700px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+    
+    
+    
+</head>
+<body>
+
+<div class="header">
+  <h1>Мои конспекты</h1>
+</div>
+
+<div class="topnav">
+  <a href="https://scw.glitch.me/">Главная</a>
+  <a href="#">Расписание</a>
+  <a href="https://scw.glitch.me/#last">Последняя запись</a>
+  <a href="https://scw.glitch.me/about" style="float:right">Обо Мне</a>
+</div>
+
+<div align="center" class="row">
+  <div class="middlecolumn">
+    <div class="card">
+      <h2>Информация</h2>
+      <h5>Информация и информационные процессы, 2 сентября , 2020</h5>
+      <div class="imgmod">
+<!--<img max-width="300" max-height="200" id="eh" src="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2FwfWlP2hk_handwrittner-1.jpg?v=1597148623016">-->
+        <img max-width="300" max-height="200" id="eh2" src="https://psv4.userapi.com/c856532/u191094389/docs/d10/f27780110dc0/Tt.jpg?extra=-SDJSsTFEr0D-nlGX-o8vJKSGBfOjrGtO6DzdZuvW0MLczeQsvm3LG3qTTv132JAfKYgiC0NFCUykXbcp-iAlsrRH4ZCcn14QIeKxiLA2Yx5lcV6C5hA77dEs0bKpQ_iIpUWN-94a1AnU_2sexwCj8-V_7Q">
+</div>
+      <div>
+        
+        <div class="modal2" id="myModal2">
+<span class="closeimg" onclick="document.getElementById('myModal2').style.display='none'">×</span>
+          <div class="modf">
+<img class="modal-content2" id="img02">
+          </div>
+<div id="caption"></div>
+</div>
+        
+
+     <style>
+        .modal2 {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    padding-top: 100px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+       div.imgmod img {
+    max-width: 25%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    align:center;
+}
+       @media screen and (max-width: 700px) {
+       div.imgmod img {
+    max-width: 46%;
+    max-height:56%;
+    align:center;
+    
+}
+       }
+       
+       .modal-content2 {
+          max-width: 85%;
+          max-height: 85%;
+          border-radius: 5px;
+          
+         }
+       
+       @media screen and (max-width: 400px) {
+         .modal-content2 {
+          max-width: 85%;
+          max-height: 85%;
+          border-radius: 10px;
+          
+         }
+       }
+       
+       @media screen and (max-width: 400px) {
+         .modal2 {
+          padding-top: 25%;
+         }
+       }
+       
+       @media screen and (max-width: 400px) {
+         .closeimg {
+          padding-right: 75%;
+          padding-top: 60px;
+          color: #bbb;
+         }
+       }
+       
+       @media screen and (max-width: 400px) {
+         .closeimg:hover {
+          color: #f1f1f1;
+         }
+       }
+       
+
+       .closeimg {
+    position: absolute;
+    top: 26px;
+    right: 35px;
+    color: #555555;
+    font-size: 40px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+       .closeimg:hover, .closeimg:focus {
+    color: #bbbbbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+       
+        </style> 
+        
+        <script>
+// Get the modal
+var modal = document.getElementById('myModal2');
+var images = document.getElementById('eh');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption");
+images.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = images.src;
+    modalImg.alt = images.alt;
+    captionText.innerHTML = images.alt;
+}
+
+</script>
+        
+        <script>
+// Get the modal
+var modal = document.getElementById('myModal2');
+var images = document.getElementById('eh2');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption");
+images.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = images.src;
+    modalImg.alt = images.alt;
+    captionText.innerHTML = images.alt;
+}
+
+</script>
+        
+    </div>
+  </div>
+  
+    </div>
+  </div>
+
+  <style>
+    .w3-teal, .w3-hover-teal:hover {
+    color: #fff !important;
+    background-color: #009688 !important;
+    }
+    
+    .w3-padding-large {
+    padding: 12px 24px !important;
+    }
+    
+    .w3-large {
+    font-size: 18px !important;
+    }
+    
+    .w3-btn, .w3-button {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    .w3-btn, .w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    }
+    
+    .w3-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
+    }
+    
+    button, html [type=button], [type=reset], [type=submit] {
+    -webkit-appearance: button;
+    }
+    
+    button, select {
+    text-transform: none;
+    }
+    
+    button, input {
+    overflow: visible;
+    }
+    
+    button, input, select, textarea {
+    font: inherit;
+    margin: 0;
+    }
+    button {outline: none;
+    }
+    
+    
+    
+    
+  </style>
+  
+  
+  <style>
+    {
+    display: block;
+}
+.w3-card-4 {
+    margin-bottom: 7px;
+}
+
+    .w3-animate-top {
+    position: relative;
+    animation: animatetop .4s;
+}
+
+
+    .w3-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px;
+}
+
+    /*@keyframes animatetop*/
+0% {
+    top: -300px;
+    opacity: 0;
+}
+
+    /*@keyframes animatetop*/
+100% {
+    top: 0px;
+    opacity: 1;
+}
+
+    /* Пк версия */
+    @media all and (max-width:768px)
+      .w3-modal {
+        padding-top: 50px;
+    }
+        .w3-modal {
+        z-index: 3;
+        display: none;
+        padding-top: 100px;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #000;
+        background-color: rgba(0, 0, 0, 0.4);
+}
+
+    .w3-display-topright {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+    /* Размер текста в шапки + размер шапки */
+    h2 {
+    font-size: 26px;
+}
+    .alg {
+      margin: 15px 0px;
+    }
+
+
+    /* Мобибльная версия */
+    @media screen and (max-width: 700px) {
+.w3-modal-content {
+    width: 95%;
+    padding: 0;
+      }
+    }
+}
+
+    
+    
+  </style>
+  <div class="mobal">
+    
+<div class="alg" align="center">
+  <button class="w3-button w3-teal w3-large w3-padding-large" onclick="document.getElementById('id01').style.display='block'">Печатная версия</button>
+  <div class="w3-modal" id="id01" style="display: none;">
+<div class="w3-modal-content w3-animate-top w3-card-4">
+<header class="w3-container w3-teal w3-display-container">
+<span class="w3-button w3-display-topright" style="font-size:16px !important" onclick="document.getElementById('id01').style.display='none'">×</span>
+<h2>⠀</h2>
+</header>
+<div class="w3-container">
+  
+<pre>
+<center>Информация и информационные процессы</center>
+<center>Информация</center>
+Информация – это сведения об окружающем мире и протекающих процессах, воспринимаемые и интерпретируемые человеком или специальными устройствами.<br>
+Восприятие информации человеком:
+1. Визуальная 90%
+2. Аудиальная 9%
+3. Обонятельная 1%
+4. Осязательная 1%
+5. Вкусовая 1%<br>
+
+Предсталвение информации человеком:
+1. Текстовая
+2. Графическая
+3. Числовая
+4. Комбинированаая(Смешанная)
+5. Звуковая
+
+Свойства информации:<br>
+1. Полнота – Информация полна, если ее достаточно для понимания и принятия решений.<br>
+2. Актуальность – Информация актуальна, если она важна, существенная для настоящего времени.<br>
+3. Понятность – Информация становится понятной, если она выражена языком, на котором говорят те, кому предназначена эта информация.<br>
+4. Объективность – информации заключается в ее независимости от субъективного человеческого мнения, то есть, объективная информация для всех одинакова.<br>
+5. Достоверная – Информация достоверна, если она отражает истинное положение дел.<br>
+6. Полезность –  Полезность информации оценивается по тем задачам, которые мы можем решить с ее помощью. Оценка полезности информации всегда субъективна. То, что полезно для одного человека, может быть совершенно бесполезно для другого.
+</pre>
+  
+<p><a class="w3-button w3-teal" onclick="document.getElementById('id01').style.display='none'">Вернуться</a></p>
+</div>
+<footer class="w3-container w3-teal col">
+<p>⠀</p>
+</footer>
+</div>
+</div>
+  </div>
+  </div>
+  
+  
+
+
+  
+</body>
+</html>

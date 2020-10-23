@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>Админ панель</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F180x180.png?v=1597163603685"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F32x32.png?v=1597163603599"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2F16x16.png?v=1597163603444"
+    />
+    <link rel="htaccess" href=".htaccess" />
+    <link rel="httpd" href="httpd.conf" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="Конспекты КСК">
+    <meta name="description" content="На сайте размещены мои записанные конспекты на время обучения в техникуме">
+    <meta name="author" content="Кирилл Афонин">
+    <meta name="copyright" content="Все права принадлежат Кириллу Афонину">
+    <!-- Заглушка -->
+    <!-- <meta http-equiv="refresh" content="0;URL=https://scw.glitch.me/maintenance.html"> -->
+    <!-- Заглушка -->
+    <!DOCTYPE html>
+    <html lang="ru">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <!-- Подключение  -->
+        
+        <style>
+          
+          {
+            box-sizing: border-box;
+          }
+
+          body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+          }
+
+          /* Заголовок / Название Блога */
+          .header {
+            padding: 30px;
+            text-align: center;
+            background: #555;
+            color: #f1f1f1;
+            
+          }
+
+          .header h1 {
+            font-size: 50px;
+          }
+
+          /* Стиль верхней панели навигации */
+          .topnav {
+            overflow: hidden;
+            background-color: #333;
+          }
+
+          /* Стиль верхних навигационных ссылок */
+          .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+          
+          
+        
+          }
+          /* Изменение цвета при наведении */
+          .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          .last a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+
+          
+                      /* Отзывчивый макет  -когда экран меньше, чем 800px широкий, сделать два столбца стека друг на друга, а не рядом друг с другом */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {   
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Отзывчивый макет - когда экран меньше, чем 400px широкий, сделать навигационные ссылки стек поверх друг друга, а не рядом друг с другом */
+        @media screen and (max-width: 700px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+        </style>
+      <body>
+        <div class="header">
+          <h1>Мои конспекты</h1>
+        </div>
+
+        <!-- Панель с верху -->
+
+       
+
+        <div class="row">
+        	<style>
+        		.aboutme {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px; 
+    margin: auto;
+    text-align: center;
+}
+            
+.titl {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+            .cards {
+      width: 25%;
+      padding: 5px 0;
+      margin: 5px;
+      background-color: lightgrey;
+      text-align: center;
+      font-size: 35px;
+      }
+          </style>
+          
+          <!-- Черный цвет для кнопок -->
+          <style>
+            .ab > a{
+              color: black;
+            }
+            
+            
+            
+          </style>
+          
+			<div class="aboutme ab" style="text-decoration:none; font-size:22px">
+			  <img src="https://cdn.glitch.com/bca6e9b9-a51a-40ab-a167-60a883c91809%2Fimg_avatar.png?v=1596961933956" alt="Admin" style="width:100%">
+        
+			  <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+input[type=textarea] {
+    width: 100%;
+    padding: 18px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+	width: 100%;
+	resize:none ;
+	box-sizing:border-box;
+	border: 1px solid #ccc;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+
+<form>
+  <div class="imgcontainer">
+  </div>
+
+  <div class="container">
+    
+  	<p style="margin: -20px 0px 20px;">Создать статью</p>
+    
+    <input name="Heading" type="text" maxlength="50" id="Heading" placeholder="Введите название статьи" required>
+
+    <input name="Subtitle" type="text" maxlength="50" id="Subtitle" placeholder="Введите подзаголовок" required>
+
+    <textarea name="Description" cols="40" rows="6" maxlength="255" style="margin: 8px 0;" id="Description" placeholder="Введите описание" required></textarea>
+
+    <textarea name="MainText" cols="40" rows="7" style="margin: -17px 0;" id="MainText" placeholder="Введите основной текст" required></textarea>
+
+    
+
+
+        
+   <!-- Password field -->
+
+<!-- An element to toggle between password visibility -->
+    
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1; margin: -20px 0px 20px;">
+    
+    <button class="submit" style="background-color:#00e600">Опубликовать</button>
+      
+      
+      <button onclick="window.location.href = 'https://scw.glitch.me/';" type="button" class="cancelbtn">Вернуться</button>
+    
+  </div>
+</form>
+  
+   <script language="JavaScript">
+if (top.location.search=="") {
+pass = prompt('Введите пароль');
+if (pass=='Test') // Ваш пароль акивации
+{ alert('Пароль принят') } else { alert('Пароль непринят!'), top.location.href="https://scw.glitch.me/" }
+};
+</script>
+			  
+            <div class="footer topn">
+              
+            </div>
+            <a name="bottom"></a>
+          </div>
+          </div>
+     </body>
+    </html>
+  </head>
+</html>
